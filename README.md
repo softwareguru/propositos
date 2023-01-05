@@ -12,5 +12,6 @@ Cosas a tener en cuenta:
  
 ## Deploy 
 
-Así como está el código puedes hacer deploy a Google Cloud Run, indicando que el `entry point` que se debe usar es `get`. Si haces deploy desde la línea de comando con el cliente de gcloud, el comando sería algo como:
+Así como está el código puedes hacer deploy a Google Cloud Run, indicando que el entry point que se debe usar es get (el nombre de la función que tenemos en main.py). Si haces deploy desde la línea de comando con el cliente de gcloud, el comando sería algo como:
+
 `gcloud functions deploy propositos --gen2 --runtime=python310 --trigger-http --entry-point=get --region=us-central1`
